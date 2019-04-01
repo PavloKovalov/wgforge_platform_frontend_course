@@ -5,6 +5,8 @@
  * выполнение и вернуть undefined.
  */
 
-export default function sleep() {
+export default function sleep(sec) {
   // your code here
+  const end = Date.now() + sec * 1000;
+  while (Date.now() < end) { //sleep.... };
 }
